@@ -1,16 +1,120 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuad Farhan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:#141514;
+        }
+        header {
+            background-color: #56a859 ;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #52ba75;
+            box-shadow: 0 4px 6px rgba(15, 145, 11, 0.712);
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 15px 20px;
+            display: inline-block;
+            transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+            font-size: 1rem;
+            border-radius: 10%;
+        }
+        nav a:hover {
+
+            box-shadow: 0 4px 6px rgba(15, 145, 11, 0.712);
+            background-color: #1fbbd3;
+            color: #ca2626;
+            transform: scale(1.1);
+        }
+        .nav-item {
+            flex: 1;
+            text-align: center;
+        }
+        .nav-item:not(:last-child) {
+            border-right: 1px solid #444;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .portfolio-item {
+            background-color: #8cd69d;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 10px rgba(95, 201, 223, 0.712);
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #navcol {
+            color: #000000;
+        }
+        
+    </style>
 </head>
-
 <body>
-  <h1>Fuad Farhan</h1>
-  <h2>Welcome to my portfolio</h2>
-</body>
 
+<header>
+    <img src="logo.png" alt="Your Logo" style="max-width: 150px;">
+</header>
+
+<nav>
+    <a id = "navcol" href="#about">About</a>
+    <a  id = "navcol" href="#projects">Projects</a>
+    <a id = "navcol" href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+    <section id="about" class="portfolio-item">
+        <h2>About Me</h2>
+        <p>I am Fuad Farhan and I am a CS student currently. Check out the latest projects I have made using my skills in languages such as JavaScript, HTML/CSS, Java, Python, C++, and more to come.</p>
+    </section>
+
+    <section id="projects" class="portfolio-item">
+        <div>
+            <h2>Meditation Breathing App</h2>
+            <p>This app was created for users to take a few seconds to do a quick meditation exercise to improve focus and relief stress. </p>
+            <img src="project.png" style="max-width: 150px;">
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+    <section id="projects" class="portfolio-item">
+        <div>
+            <h2>Project </h2>
+            <p>Description of project 2</p>
+        </div>
+    </section>
+
+    <section id="contact" class="portfolio-item">
+        <h2>Contact Info</h2>
+        <p>Email: fuadhoquefarhan05@gmail.com</p>
+    </section>
+</div>
+
+</body>
 </html>
