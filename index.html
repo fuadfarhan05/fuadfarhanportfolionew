@@ -3,157 +3,203 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fuad Farhan</title>
+    <title>Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color:#1a0549;
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background-color: #f5f5f5;
         }
-        header {
-            background-color: #1f0b61 ;
-            color: #fff;
-            padding: 30px;
+
+        #h1test {
             text-align: center;
+            padding: 20px;
+            font-size: 36px;
         }
+
         nav {
-            display: flex;
-            justify-content: center;
-            background-color: #52ba75;
-            box-shadow: 0 4px 6px rgba(15, 145, 11, 0.712);
-            width: 100%;
-            top: 0;
-            z-index: 1000;
+          text-align: center;
+          font-size: 15px;
+          background: rgba(194, 177, 177, 0.8);
+          backdrop-filter: blur(10px);
+          border-radius: 10px;
+          margin: 10px;
+          padding: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          position: sticky;
+          top: 0;
+          z-index: 1000;
         }
-        nav a {
-            text-decoration: none;
-            color: white;
-            padding: 15px 20px;
-            display: inline-block;
-            transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
-            font-size: 1rem;
-            border-radius: 10%;
+    
+        .nav-link {
+          display: inline-block;
+          margin: 0 15px;
+          padding: 10px 20px;
+          color: #8892b2;
+          text-decoration: none;
+          border-radius: 5px;
+          transition: background 0.3s ease, color 0.3s ease, transform 0.2s ease;
         }
-        nav a:hover {
-   
-            box-shadow: 0 4px 6px rgba(15, 145, 11, 0.712);
-            background-color: #030244;
-            color: black;
-            transform: scale(1.1);
+    
+        .nav-link:hover {
+          background: rgb(49, 96, 234);
+          color: #ffffff;
+          transform: scale(1.05);
         }
-        .nav-item {
-            flex: 1;
-            text-align: center;
+    
+        .nav-link:active {
+          transform: scale(1);
         }
-        .nav-item:not(:last-child) {
-            border-right: 1px solid #444;
-        }
+
         .container {
             max-width: 1200px;
             margin: 20px auto;
             padding: 0 20px;
         }
-        .portfolio-item {
-            background-color: #1f0b61;
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+            padding: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h2 {
+            margin-top: 0;
+        }
+
+        .card p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .card a {
+            color: #3160ea;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .card a:hover {
+            color: #ff6347;
+        }
+        #dropdown-content {
+            display: none; /* Initially hide the dropdown content */
+            margin-top: 10px;
+        }
+
+        #dropdown-content p {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
             border-radius: 5px;
-            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        #design {
+            font-size:15px;
+            font-family: Arial, sans-serif;
+            color: rgb(255, 255, 255);
+            border: solid 2px;
+            border-radius: 25px;
+            border-color:rgb(49, 96, 234);
+            border-width: 15px;
+            background:rgb(49, 96, 234);
+
+        }
+
+        #anchor {
             margin-bottom: 20px;
-            box-shadow: 0 10px 10px rgba(65, 226, 105, 0.712);
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
         }
 
-        #navcol {
-            color: white;
+        img{
+             border:solid black 10px;
+             border-radius:30px;
+
+
         }
 
-        #title {
-            color: rgb(169, 132, 178); 
+        #watch{
+            align-self: center;
         }
 
-        p {
-            color: white;
+        #newcolor{
+            border:solid 10px;
+            border-color: rgb(183, 110, 121);
+;
         }
 
-        p:hover {
-            color: #46bd7c;
-            border: 2px dotted;
-            border-color: #fff;
-            
-        }
-
-        #space {
-            padding: 10px;
-        }
-        
     </style>
 </head>
 <body>
+    <div>
+      <h1 id="h1test">Fuad Farhan</h1>
+      <nav>
+        <a href="#about" class="nav-link">About Me</a>
+        <a href="#project" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
 
-<header>
-    <img src="logo.png" alt="Your Logo" style="max-width: 150px;">
-</header>
-
-<nav>
-    <a id = "navcol" href="#about">About</a>
-    <a  id = "navcol" href="#projects">Projects</a>
-    <a id = "navcol" href="#contact">Contact</a>
-</nav>
-
-<div class="container">
-    <section id="about" class="portfolio-item">
-        <h2 id ="title">About Me</h2>
-        <p>I am Fuad Farhan and I am a CS student currently. Check out the latest projects I have made using my skills in languages such as JavaScript, HTML/CSS, Java, Python, C++, SwiftUI, and more to come.</p>
-    </section>
-    <h1 id ="title" >Projects</h1>
-    <section id="projects" class="portfolio-item">
-        <div>
-            <img src="swift.png" style="max-width: 70px;">
-            <img src="xcode.png" style="max-width: 70px;">
-            <h2 id ="title">MeCycle</h2>
-            <p>A meditation app.This app was created for users to take a few seconds to do a quick meditation exercise to improve focus and relief stress. </p>
-            <img src="project.png" style="max-height: 300px;">
-        </div>
-        <!-- Add more projects as needed -->
-        <div>
-            <h2 id ="title">TwoCents</h2>
-            <img src="twocentslogo.png" style ="max-width: 200px">
-            <p>A student budget helper app. This app allows students to input how much money they would intend to spend in total and the app creates a budget for 
-                the student that allows the student to spend wisely on each purchase. 
+    <div class="container">
+        <div id="about" class="card">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am Fuad, I have been doing computer science since the 6th grade and have always had a passion for building cool and impactful projects by coding. In this page you will find many of my best works displayed.<br> I have done work as a TA for high school computer science students and was apart of Infosys app challenge program which later inspired me to make the app "MeCycle" which you will learn more about in the "Projects" section of this page.
             </p>
-            <img id = "space" src="twocentshome.png" style="max-height:300px">
-            <img  id = "space" src = "programpicture.png" style="max-width:400px">
+            <img id = "newcolor" src = "pictureofme.jpeg" style="max-width:300px">
         </div>
-        <div>
-            <h2 id ="title">Dino Study</h2>
-            <img src="dino.png" style ="max-width: 200px">
-            <p>DinoStudy is an app for young students to begin their journey in learning how to read. This app contains flashcards of many sight words that allow students to improve their abilities in recognizing common sight words. This app is intended to encourage young readers to an entertaining version of their reading practices and additionally allowing readers to practice their reading skills at home or when traveling with the accessibilty of this mobile app.</p>
-            <img id = "space" src="dinohome.png" style="max-height:300px">
-            <img  id = "space" src = "intro.png" style="max-height:300px">
-            <img id = "space" src = "flashcards.png" style="max-height:300px">
-        </div>
-    </section>
-    <section id="projects" class="portfolio-item">
-        <div>
-            <h2 id ="title">Blender 3D Models</h2>
-            <p>Blender is an application that allows creators to use tools to create and render 3d models of choice in real time.</p>
-            <img src="blender.png" style="max-width: 150px;">
-        </div>
-    </section>
 
-    <section id="contact" class="portfolio-item">
-        <h2 id ="title">Contact Info</h2>
-        <p>Email: fuadhoquefarhan05@gmail.com</p>
-    </section>
-</div>
+        <div id="project" class="card">
+            <h2>Projects</h2>
+            <p>
+                Here you can showcase your projects. Describe your work, the technologies you used, and any other details that can highlight your skills and achievements.
+            </p>
+            <a href="#" id="view-projects">View Projects</a>
+            <div id="dropdown-content" class="dropdown-content">
+                <p>MeCycle: A meditation app.This app was created for users to take a few seconds to do a quick meditation exercise to improve focus and relief stress. </p>
+             <div id = "anchor">  
+                <a id = "design" href="https://github.com/fuadfarhan05/MeCycle">See Github</a></break>
+            </div> 
+            <div id = "imgstyle">
+                <img id="watch" src = "project.png" style="text-align: center; max-width: 300px;">
+              </div>  
+                <p>DinoStudy is an app for young students to begin their journey in learning how to read. This app contains flashcards of many sight words that allow students to improve their abilities in recognizing common sight words. This app is intended to encourage young readers to an entertaining version of their reading practices and additionally allowing readers to practice their reading skills at home or when traveling with the accessibilty of this mobile app.</p>
+              <div id = "anchor">  
+                <a id = "design" href="https://github.com/fuadfarhan05/DinoStudy">See Github</a>
+               </div>
+               <div id = "imgstyle">
+                <img id = "space" src="dinohome.png" style="max-height:300px">
+                <img  id = "space" src = "intro.png" style="max-height:300px">
+                <img id = "space" src = "flashcards.png" style="max-height:300px">
+               </div>
+            </div>
+        </div>
 
+        <div id="contact" class="card">
+            <h2>Contact</h2>
+            <p>
+                This is where you can provide contact information. Include your email, social media links, or any other means through which people can reach out to you.
+            </p>
+            <a href="#">Get in Touch</a>
+        </div>
+    </div>
+    <script>
+        document.getElementById('view-projects').addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent the default link behavior
+            var dropdown = document.getElementById('dropdown-content');
+            if (dropdown.style.display === 'none' || dropdown.style.display === '') {
+                dropdown.style.display = 'block'; // Show the dropdown content
+            } else {
+                dropdown.style.display = 'none'; // Hide the dropdown content
+            }
+        });
+    </script>
 </body>
 </html>
