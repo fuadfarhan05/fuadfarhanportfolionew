@@ -11,13 +11,30 @@ body {
   #h1test {
       text-align: center;
       padding: 20px;
-      font-size: 36px;
       color:#555050;
   }
 
   .white {
     color:#555050;
     margin-bottom:10px;
+  }
+
+  .mecontainer{
+    border-radius: 10px;
+    background:#50e4a7;
+    
+  }
+
+  .paraspace {
+    margin:15px;
+    padding:15px;
+  }
+
+  .projectcontainer {
+    border-radius: 50px;
+    margin: 15px;
+    padding: 15px;
+    background:rgb(255, 255, 255)
   }
 
 
@@ -54,11 +71,6 @@ body {
 
   .nav-link:active {
     transform: scale(1);
-  }
-
-  .container {
-      margin: 20px;
-      padding: 20px;
   }
 
   .card {
