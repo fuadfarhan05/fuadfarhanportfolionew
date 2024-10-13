@@ -14,6 +14,17 @@ body {
       color:#555050;
   }
 
+  .nexto {
+    display: flex;
+    align-items: center;
+  }
+
+  .moveside {
+    margin-left:20px;
+    padding: 30px;
+  }
+
+
   .white {
     color:#555050;
     margin-bottom:10px;
